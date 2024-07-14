@@ -4,4 +4,5 @@ def convert(str1):
 def main():
     print(convert(input()))
 
-main()
+if __name__ == "__main__":
+    main()
