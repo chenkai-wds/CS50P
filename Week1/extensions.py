@@ -1,6 +1,6 @@
 s = input("File name: ")
 if '.' in s:
-    s_list = s.split('.')
+    s_list = s.strip().lower().split('.')
     if s_list[-1] in ["gif", "png"]:
         print("image/" + s_list[-1])
     elif s_list[-1] in ["jpg", "jpeg"]:
@@ -9,8 +9,11 @@ if '.' in s:
         print("application/" + s_list[-1])
     elif s_list[-1] == "txt":
         print("text/plain")
+    elif s_list[-1] == "bin":
+        print("application/octet-stream")
 else:
     print("application/octet-stream")
+
 
 """
 
