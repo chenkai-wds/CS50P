@@ -1,6 +1,6 @@
 amount_due = 50
 while amount_due > 0:
-    print("Amount Due: ", amount_due)
+    print("Amount Due:", amount_due)
     coin = input("Insert Coin: ")
     if coin == "5" or coin == "10" or coin == "25":
         amount_due -= int(coin)
