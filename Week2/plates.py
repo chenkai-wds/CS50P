@@ -14,7 +14,7 @@ def is_valid(s):
             return False
         if not s[i].isalpha() and not s[i].isdigit():
             return False
-        if not digit and [i].isdigit() :
+        if not digit and s[i].isdigit() :
             if s[i] == '0':
                 return False
             else:
